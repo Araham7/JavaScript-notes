@@ -5,8 +5,8 @@
 
 /* 
     NOTE :--- 
-    ***** "this" ===> Ye hame preasent scope me upasthit variable ke current context ko batlata hai .
-    ***** "this.object_Key" ===> Ye hame object ke Key ke current context(curent value) ko batlata hai .
+    ***** "this" ===> Ye hame preasent scope me upasthit variables ke "current context" ko batlata hai .
+    ***** "this.object_Key" ===> Ye hame object(i.e, object_Key) ke Key ke current context(curent value) ko batlata hai .
 */
 const NewUser = {
     "firstName" : "Arahah" ,
