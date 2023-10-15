@@ -1,6 +1,7 @@
 /* 
 Note : 
 *** "forEach" loop hamesa call-back function argument me leta hai.
+*** Wastaw forEach loop ka call-back 3 argumrnts ( "(i). Array ka Item ", "(ii). Array ka Index" , "(iii). full Array" ) leta hai .
 */
 
 let myArr = [ "Araham" , "Abeddin" , 786 , true ] ;
@@ -51,11 +52,7 @@ true
 
  */
 
-
-
-
-
-
+/* /////////////////////////////////////////////////////////////////////////////////// */
 
 //(4).
 const specialArr = [ 
@@ -91,5 +88,23 @@ cpp
 py
 html
 CSS
+
+*/
+
+
+// (5).
+const coding = ["js", "ruby", "java", "python", "cpp"];
+
+coding.forEach( (item, index, arr)=> {
+    console.log(item, index, arr);
+} ) ;
+/*
+OUTPUT :---
+
+js 0 [ 'js', 'ruby', 'java', 'python', 'cpp' ]
+ruby 1 [ 'js', 'ruby', 'java', 'python', 'cpp' ]
+java 2 [ 'js', 'ruby', 'java', 'python', 'cpp' ]
+python 3 [ 'js', 'ruby', 'java', 'python', 'cpp' ]
+cpp 4 [ 'js', 'ruby', 'java', 'python', 'cpp' ]
 
 */
