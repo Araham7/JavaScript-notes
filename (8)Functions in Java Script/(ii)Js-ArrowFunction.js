@@ -1,10 +1,16 @@
 /*
-***** Arrow function me agar business logic ko { } curly bracket ke andar me likhenge to humlogon ko return keyword ka use karna parega aur agar () round bracket me likhenge to hame return keyword ka use nahi karna hoga
-Important notes hai iska use humlog react js me karenge ok.
+NOTE :---
+***** "Simple function" aur "Arrow function" ke santh humlog "this." use nahi karsakten hai .
+ */
+
+/*
+[NOTE : Important notes hai iska use humlog react js me karenge ok.
+***** Arrow function me agar business logic ko { } curly bracket ke andar me likhenge to humlogon ko return keyword ka use karna parega aur agar () round bracket me likhenge to hame return keyword ka use nahi karna hoga]
 
 Note :---
-***** Yadi humlogon ko Arrow function se *Object* return karwana hai to uske liye humlog ({Object}) me likhenge ok .
-***** "Simple function" aur "Arrow function" ke santh humlog "this." use nahi karsakten hai .
+***** Yadi humlogon ko Arrow function se *Object* return karwana hai to uske liye humlog rond-bracket ke andar object i.e, ({Object}) me likhenge ok
+[   ex: let x = ()=> ({"firstName" : "Araham" , "lastName" : "Abeddin"})   
+] .
 */
 
 /* ************* Arrow function ************* */
@@ -46,7 +52,7 @@ console.log(result);
 
 /*
 Note:---
-(1). curly bracket lagane par humlog use *Explicit return* kahten hai kyuki humlogon ko return alag se likhna par raha hai .
+(1). curly bracket lagane par humlog use *Explicit return* kahten hai kyuki humlogon ko return alag se likhna parta hai .
 (2). Round bracket lagane par (yaphir bina bracket lagane par) hame koi "return" nahi likhna par raha hai isiliye humlog ise *implicit return* krhenge.
 */
 

@@ -1,3 +1,25 @@
+/*
+NOTE :---
+***** "forEach" koi bhi value return nahi karta hai , ye sirf valuse ko print karta hai.
+*/
+// (0).
+const code = ["js", "ruby", "java", "python", "cpp"]
+
+const values = code.forEach( (item) => {
+    console.log(item);
+    return item
+} )
+console.log(values);
+/*
+js
+ruby
+java
+python
+cpp
+undefined // NOTE : "forEach" koi bhi value return nahi karta hai , ye sirf valuse ko print karta hai.
+*/
+
+
 /* 
 Note : 
 *** "forEach" loop hamesa call-back function argument me leta hai.
@@ -108,3 +130,4 @@ python 3 [ 'js', 'ruby', 'java', 'python', 'cpp' ]
 cpp 4 [ 'js', 'ruby', 'java', 'python', 'cpp' ]
 
 */
+

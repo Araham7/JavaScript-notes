@@ -14,9 +14,9 @@ let mul = function (num1 , num2) {
 }
 mul(56,63)   // OUTPUT : 3528
 
-// ____________________________________________________
+// ----------------------------------------------
 
-
+// (3).
 function sayMyName(){
     console.log("a");
     console.log("r");
@@ -32,21 +32,25 @@ function sayMyName(){
 // function addTwoNumbers(number1, number2){
 //     console.log(number1 + number2);
 // }
-// addTwoNumbers   // function ka referance dena .
-// addTwoNumbers   // function call .
+// addTwoNumbers   // function ka "referance dena" .
+// addTwoNumbers()   // function ka "call karna" .
 
 
-// **************************************************
+
+// *****************************************************
 
 
+// (4).
 function addTwoNumbers(number1, number2){
     return number1 + number2
 }
 const result = addTwoNumbers(3, 5)
 // console.log("Result: ", result);
 
-// ****************************************
 
+// ******************************************************
+
+// (5).
 function loginUserMessage(username = "sam"){
     if(!username){
         console.log("PLease enter a username");
@@ -59,7 +63,7 @@ function loginUserMessage(username = "sam"){
 
 
 // ------------------------------------------------------------------------------------------------
-
+// (6).
 // object declaration
 const user = {
     username: "hitesh",
@@ -73,8 +77,9 @@ handleObject(user) ;   //function call
 
 
 
-// ---------------------
+// ----------------------------------------------------
 
+// (7).
 const myNewArray = [200, 400, 100, 600]
 
 function returnSecondValue(getArray){
@@ -82,3 +87,26 @@ function returnSecondValue(getArray){
 }
 console.log(returnSecondValue(myNewArray));
 // console.log(returnSecondValue([200, 400, 500, 1000]));
+
+
+
+// ----------------------------------------------------
+
+// (8).
+/*
+ NOTE :--- 
+ ***** Jab bhi kahi function me ek se jyada bar return aaya hoto usme jo return sabse pehle aaya hai wahi wala return function return kaega . 
+ ***** First return ke baad ke sare code ko function execute nahi karega.
+*/
+
+function fun1(num1 , num2) {
+    return 45 ;
+    return num1 + num2 ;   // "Ye return execute hi nahi karega" (Unreachable code) kyuki Isse pehle bhi ek return aaya huwa hai(joki 45 return karta hai. )
+}
+console.log(fun1(55 , 64));
+/*
+OUTPUT :---
+
+45
+*/
+
