@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      *{
+        color: beige;
+      }
+      .bcg {
+        background-color: #212121;
+      }
+      h1 {
+        color: aliceblue;
+      }
+      p {
+        color: aliceblue;
+      }
+    </style>
+  </head>
+  <body class="bcg">
+    <h1 class="heading" id="head_Id" name="abc">Lorem ipsum consectetur adipisicing elit. Rerum quos.<p>Lorem, ipsum dolor.</p> <span style="display: none"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum,omnis sed? Excepturi?</span>
+    </h1>
+
+    <h2>adipisicing elit. Voluptatum,omnis sed? E esciunt incidunt accusantium beatae.</h2>
+    <h2> adipisicing elit. adipisicing elit. Nesciunt incidunt accusantium beatae.</h2>
+    <h2>uptatum,omnis sed? Excepturi? ctetur adipisicing elit. Nesciunt incidunt accusantium beatae.</h2>
+
+
+    <p class="pera_1">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima vitae ab
+      debitis.
+    </p>
+    <p class="pera_2">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima vitae ab
+      debitis.
+    </p>
+    <p class="pera_3">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima vitae ab
+      debitis.
+    </p>
+    <input type="password" name="" id="">
+    <ul>
+      <li class="li_class" >I'm in first list</li>
+      <li class="li_class" >I'm in second list</li>
+      <li class="li_class" >I'm in third list</li>
+      <li class="li_class" >I'm in fourth list</li>
+      <li class="li_class" >I'm in fifth list</li>
+    </ul>
+  </body>
+</html>
+
+<!-- 
+
+------------------ (1). JavaScript Selectors ------------------
+
+NOTE :---
+***** document.querySelectorAll('');   ===> Ye hame return me "elments" ka "nodeList" deta hai.
+***** document.querySelector('');   ===> Ye hame return me bas ek hi "element" deta hai .
+
+***** "querrySelector" aur "querySelectorAll" se kisi element ko select karnekeliye humlog sare "Css Selectors" ka prayog kar sakten hai .
+
+
+
+(1). document.getElementById('element_ka_id'); ===> Isse humlog kisi element ko uske "Id se select karten hai" .
+
+(2). document.getElementsByClassName('elements_ka_class'); ===> Isse humlog kisi elements ko uske "'className' se select karten hai" .
+
+(3). document.getElementsByName('');
+
+(4). document.getElementsByTagName('elements_ka_tagNames'); ===> Isme humlog elements ko uske "tag-Name"(ex :-- h1 , p , span ... etc) se select karten hai .
+
+(5). document.querySelector('.class_name / #id_name / tagname '); => Isme humlog kisi ek element ko uske ' "tag-Name"(ex : h1 , p , span ... etc) , class , id , name ' se select karten hai . NOTE :-  yadi ek se jyada element hoto "document.querySelector()" method "first" element kohi select karta hai.
+
+(6). document.querySelectorAll(''.class_name / tagname '); ===> Isse humlog ek se jyada elements ko selec kar skten hai.
+
+----------------------------
+
+(i). document.getElementById('head_Id').id     ===> Ye hame "getElementById()" method se selected element ka "Id" batlayega .
+
+(ii). document.getElementById('head_Id').className     ===> Ye hame "getElementById()" method se selected element ka "className" batlayega .
+
+(iii). document.getElementById('head_Id').getAttribute('id') ===> Ye hame selected element ka "id" batayega .
+
+(iv). document.getElementById('head_Id').getAttribute('className') ===> Ye hame seelected element ka "className" batayega .
+
+(v). document.getElementById('head_Id').getAttribute('name') ===> Ye hame selected element ka "name" attribute ka value batlayega .
+
+
+
+(vi). document.getElementById('head_Id').id = "newId"     ===> Aysa karnese humlog element ke "Id" ko "Overwrite"(change) karsakten hai.
+
+(vii). document.getElementById('head_Id').className = "newClassName"   ===> Aysa karnese humlog element ke "class" ko "Overwrite"(hange) 
+karsakten hai.
+
+(viii). document.getElementById('head_Id').setAttribute("class" , "anotherClass")   ===> Ye hamare selected element ke "class" ko "Overwrite"(change) kardeta hai.
+
+(xi). document.getElementById('head_Id').setAttribute("class" , "c1 c2")   ===> Ye hamare selected element ke "class" ko "Overwrite(change)" karke "c1" aur "c2" dono(c1 and c2) kardega.
+
+----------------------------/////////////////////////////------------------------------
+/*
+(x).
+NOTE :--
+***** Selected element ke santh ( .style.cssPropety = "css_value_that_you_want_to_change" ) karnnese humlog Jascript se "document object model(DOM)" me preasent kisi bhi element par css property laga sakta hun .
+
+                    (2). Changing "CSS property" using "JavaScript" :---------------------
+
+let newVar = document.getElementById('head_Id') ;
+newVar.style.color = "yellow" ; ===> Ye hamare newVar(se selected) element ka color yellow kardega.
+newVar.style.backgroundColor = "yellow" 
+    
+*/
+
+---------------------------//////////////////////////////--------------------------------
+
+                    (3). Difference between "(.innerText)" , "(.textContent)" , "(.innerHTML)" :----------
+
+let heading = document.getElementById('head_Id');
+
+(i). heading.innerText   ===> Ye hame sirf browser dwara text show kiya jane wle text kohi show karega.
+
+(ii). heading.textContent   ===> Ye hame jo browser dwara text show kiya jaraha hai use to dikhata hi hai , par uske santh-santh 'hame wo text bhi show karega jiska css dwara display = "non" kardiya gaya hai .'
+
+(iii). heading.innerHTML   ===> Ye hamare dwara seleted element ke "html-tag" ke santh-santh "text(andar ka content) bhi show karega" .
+
+---------------------------//////////////////////////////--------------------------------
+
+
+                      (4). DOM "attributr Selection" using "querySelector" :-------------
+
+
+Incomplete
+
+
+
+
+---------------------------//////////////////////////////--------------------------------
+
+
+                      (5). DOM "li" using "querySelector" :-------------
+
+let ul = document.querySelector('ul');   ===> Ye hamare first "unordered list(ul)" ko select karlega .
+let li = document.querySelecor('li');   ===> Ye hamare first "list tem(li)" ko select kardega .
+li.style.bakgroundColor = "blue"   ===> ye hamare ul ke first li ka background color blue kardega .
+
+ -->

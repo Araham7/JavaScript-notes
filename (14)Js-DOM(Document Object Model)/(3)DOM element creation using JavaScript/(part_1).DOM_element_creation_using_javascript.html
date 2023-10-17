@@ -1,0 +1,80 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DOM | Basics </title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <div class="parent">
+        <!-- this is a comment -->
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    const parent = document.querySelector('.parent');
+    // console.log(parent);
+    console.log(parent.children);   // OUTPUT:   HTMLCollection(4) [div.day, div.day, div.day, div.day]
+
+    console.log(parent.children[1]);   // OUTPUT:   <div class="day">Tuesday</div>
+
+    // console.log(parent.children[1].innerHTML);   // OUTPUT:   Tuesday
+
+
+    for (let i = 0; i < parent.children.length; i++) {
+         console.log(parent.children[i].innerHTML);
+    }
+
+
+    parent.children[1].style.color = "yellow"
+    console.log(parent.firstElementChild);   // Ye hame " parent " ke "first-child" ko show karega .
+    console.log(parent.lastElementChild);   // Ye hme " parent " ke "last-child" ko show karega .
+
+    const dayOne = document.querySelector('.day')   // Is tarhese bhi humlog " .day " class ke element ko select karsakten hai .
+    console.log(dayOne);
+    console.log(dayOne.parentElement);   // ye "dayOne" ka "parentElement" ko show karega .
+    console.log(dayOne.nextElementSibling);   // ye hamare "dayOne" element ke "next sibling element" ko show karega .
+
+    console.log("NODES: ", parent.childNodes);   // ye hamare "parent" ke sare "childNodes" ko show karega .
+</script>
+</html>
+
+
+<!--     
+    
+    -------------------------------------------------------- HTNL Special NOTES -------------------------------------------------
+
+    Note :---
+    
+    ***** HTMLCollection ===>  HTMLCollection joki(jisme) almost array like property hai , jismein ham kafi had Tak Jo Jo method array mein Laga sakte hain wo method HTMLCollection me bhi lagaya ja sakta hai.
+
+
+
+    NOTES :---
+
+(i). Let htmlcol = document.getelementsbyClassname('');   ===> Ye hame return me "HTML collection" deta hai jispar humlog loop nahi laga sakte hai .
+
+(ii). Let newArr = Array.from(htmlcol); ===> ye hamare "html collection" ko Array me convert kardega , aur phir humlog html collection par aaramse loop laga sakenge .
+
+
+
+
+
+(2). DOM element creation :---
+Let parent = document.queryselector ('')
+parent.firstElemChild ===> Ye hame (parent ka) first child dega.
+parent.lastElementChild  ===> Ye hama (parent ka ) last child dega.
+Let element = document.querySelector('');
+element.parentElement ===> Ye hame element ka parent batata hai.
+element.nextElementSibling ===> Ye hame
+element ka next Sibling dega.
+element.parentElement ===> Ye hame selected element ka parent batlata hai.
+parent.childNodes ===>  Ye hame paren ka number of nodes batayega.(Note: *** Ye hame nodelist deta hai)
+
+ -->

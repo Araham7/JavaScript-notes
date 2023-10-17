@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DOM | Element Creation using javascript </title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    
+</body>
+<script>
+
+    const div = document.createElement('div');   // Ye hamare Liye DOM me ek element(div) create kardega .
+
+    div.className = "main"    // Ye div ka class name "main" kardega .
+
+    div.id = Math.round(Math.random() * 10 + 1);   // Ye jab jab run karega tab-tab Js ke dwara banaye gaye "div" ka "ID" randomly "1 se 10" ke bich set kardega
+
+    div.setAttribute("title", "generated title");   // "setAttribute" ===> Ye div ke "title" ko "generated title" kardega .
+
+    div.style.backgroundColor = "gray"   // Ye JavaScript se banaye gaye "div" ka "backgroungColor" ko "gray" kadega .
+
+    div.style.padding = "12px"   // Ye JavaScript se banaye gaye "div" ka charon taraf se "padding"= "12px" kardega .
+
+    div.innerText = " Tinku Babu "   // Ye JavaScript ke dwara banaye gaye "div" ke "innerText" ko "Tinku Babu" kardega .
+
+    
+    // const addText = document.createTextNode("Pinku Babu")   // Ye ek "textNode" create karega .
+    // div.appendChild(addText)   // Ye texNode ko "div" me daal dega .
+
+    document.body.appendChild(div)   // Ye hamare dwara JavaScript se banaye gaye "div" ko Document ke body me "append" ( Document ke "body" ke end me add kardega ) kardega . 
+    
+    console.log(div);
+
+</script>
+</html>

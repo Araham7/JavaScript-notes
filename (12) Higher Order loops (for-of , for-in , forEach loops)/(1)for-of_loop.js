@@ -2,8 +2,8 @@
 
 /* 
 NOTE : 
-****** Only "map" and "arrays" are ittaratable using "for-of" loop .
-****** "Objects" are not ittaratable using "for-of" loop .
+****** Only "map" and "arrays" are ittaratable by using "for-of" loop .
+****** "Objects" are not ittaratable by using "for-of" loop .
 */
 
 // for of loop : Iska prayog "array ka elements ko ( object ke keys ya values ko )" nikalne(access) keliye kiya jata hai.
