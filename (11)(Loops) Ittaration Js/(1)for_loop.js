@@ -8,7 +8,7 @@ for (let i = 0 ; i< 5 ; i++) {
     console.log(i); ;
 }
 /* -----------------------
-OUTPUT(1) :--- 
+OUTPUT(1) :---
 
 0
 1
@@ -121,3 +121,9 @@ Detected 3
 Value of i is 4
 Value of i is 5
 ----------------------- */
+
+
+
+
+
+

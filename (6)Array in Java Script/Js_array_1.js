@@ -1,4 +1,4 @@
-// array
+                                                  // Array
 
 const myArr = [0, 1, 2, 3, 4, 5]
 console.log(myArr);
@@ -34,18 +34,18 @@ console.log(myArr);
 myArr.unshift(250,645,246,"Abeddin");   //Ye "myArr" ke left-side(starting) me {250,645,246,"Abeddin"} elements ko add kardega .
 console.log(myArr);
 
-// (4) "shift()"
+// (4) ".shift()"
 myArr.shift()  //Ye "myArr" ke left-side(starting-side) me ek element ko delete kardega .
 console.log(myArr);
 
 // (5) ".includes(9)"
-console.log(myArr.includes(9)); // This will check weather "myArr" , inludes '9' or not . if it includes '9' it will print 'true' if it does not include '9' it will print 'false' .
+console.log(myArr.includes(9)); // This will check weather "myArr" , inludes '9' or not , if it includes '9' it will print 'true' if it does not include '9' it will print 'false' .
 
 // (6) ".includes(2)"
 console.log(myArr.indexOf(2)); // Ye '3' ka index batyega , aur agar ".indexOf()" ke andar likha gaya element 'myArr' me nahi hoga to ye "-1" print karega .
 
 // (7) ".join()"
-const newArr = myArr.join() // Ye "newArr" me "myArr" ke sare elements ko commasaparater laga karke string me convert kaardega .
+const newArr = myArr.join() // Ye "newArr" me "myArr" ke sare elements ko commasaparater laga karke string me convert kaardega . lekin origional array me koi bhi priwartan nahi aayega .
 console.log( newArr);   // OUTPUT : 0,1,2,3,4,5,6,7,8,12,52
 console.log(typeof newArr);   // OUTPUT : string
 
@@ -59,7 +59,7 @@ console.log("A ", myArr);
 
 /*                         "slice()"                         */
 
-const myn1 = myArr.slice(2, 6);   // Ye hame "myArr" ke 2nd index se (6-1)th = 5th index tak ke sare elements ko dega , likin isme origional array same hi rahega matlabki original array(myArr) me koi pariwartan nahi hoga .
+const myn1 = myArr.slice(2, 6);   // Ye hame "myArr" ke 2nd index se (6-1)th = 5th index tak ke sare elements ko dega , lekin isme origional array same hi rahega matlabki original array(myArr) me koi pariwartan nahi hoga .
 console.log(myn1);
 console.log("B ", myArr);
 
@@ -90,3 +90,10 @@ lila.unshift(65,54,62)
 console.log(lila)
 lila.shift()
 console.log(lila)
+
+
+
+
+
+
+

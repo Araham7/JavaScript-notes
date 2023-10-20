@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+
+
     <style>
       *{
         color: beige;
@@ -18,6 +21,7 @@
         color: aliceblue;
       }
     </style>
+
   </head>
   <body class="bcg">
     <h1 class="heading" id="head_Id" name="abc">Lorem ipsum consectetur adipisicing elit. Rerum quos.<p>Lorem, ipsum dolor.</p> <span style="display: none"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum,omnis sed? Excepturi?</span>
@@ -87,16 +91,13 @@ NOTE :---
 
 (v). document.getElementById('head_Id').getAttribute('name') ===> Ye hame selected element ka "name" attribute ka value batlayega .
 
-
-
 (vi). document.getElementById('head_Id').id = "newId"     ===> Aysa karnese humlog element ke "Id" ko "Overwrite"(change) karsakten hai.
 
-(vii). document.getElementById('head_Id').className = "newClassName"   ===> Aysa karnese humlog element ke "class" ko "Overwrite"(hange) 
-karsakten hai.
+(vii). document.getElementById('head_Id').className = "newClassName"   ===> Aysa karnese humlog element ke "class" ko "Overwrite"(hange) karsakten hai.
 
-(viii). document.getElementById('head_Id').setAttribute("class" , "anotherClass")   ===> Ye hamare selected element ke "class" ko "Overwrite"(change) kardeta hai.
+(viii). document.getElementById('head_Id').setAttribute("class" , "anotherClass")   ===> Ye hamare selected element ke "class" ko "replace" kardeta hai .
 
-(xi). document.getElementById('head_Id').setAttribute("class" , "c1 c2")   ===> Ye hamare selected element ke "class" ko "Overwrite(change)" karke "c1" aur "c2" dono(c1 and c2) kardega.
+(xi). document.getElementById('head_Id').setAttribute("class" , "c1 c2")   ===> Ye hamare selected element ke "class" ko "replace" karke "c1" aur "c2" dono(c1 and c2) kardega .
 
 ----------------------------/////////////////////////////------------------------------
 /*
@@ -107,9 +108,9 @@ NOTE :--
                     (2). Changing "CSS property" using "JavaScript" :---------------------
 
 let newVar = document.getElementById('head_Id') ;
-newVar.style.color = "yellow" ; ===> Ye hamare newVar(se selected) element ka color yellow kardega.
-newVar.style.backgroundColor = "yellow" 
-    
+newVar.style.color = "yellow" ; ===> Ye hamare newVar(se selected) element ka color" yellow" kardega .
+newVar.style.backgroundColor = "green" ; ===> Ye hamare newVar(se selected) element ka background color "green" kardega .
+
 */
 
 ---------------------------//////////////////////////////--------------------------------
@@ -118,7 +119,7 @@ newVar.style.backgroundColor = "yellow"
 
 let heading = document.getElementById('head_Id');
 
-(i). heading.innerText   ===> Ye hame sirf browser dwara text show kiya jane wle text kohi show karega.
+(i). heading.innerText   ===> Ye hame sirf browser dwara text show kiya jane wale text kohi show karega.
 
 (ii). heading.textContent   ===> Ye hame jo browser dwara text show kiya jaraha hai use to dikhata hi hai , par uske santh-santh 'hame wo text bhi show karega jiska css dwara display = "non" kardiya gaya hai .'
 
@@ -141,7 +142,8 @@ Incomplete
                       (5). DOM "li" using "querySelector" :-------------
 
 let ul = document.querySelector('ul');   ===> Ye hamare first "unordered list(ul)" ko select karlega .
-let li = document.querySelecor('li');   ===> Ye hamare first "list tem(li)" ko select kardega .
+let li = document.querySelecor('li');   ===> Ye hamare first "list tem(li)" ko select karlega .
 li.style.bakgroundColor = "blue"   ===> ye hamare ul ke first li ka background color blue kardega .
 
  -->
+

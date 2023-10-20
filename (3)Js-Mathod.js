@@ -11,9 +11,9 @@ let obj = {
     myfun : function(){
     console.log("i'm a good boy.");
     },
-    yourfun : function(a,b){
+    add : function(a,b){
         return c = a+b ;
     },
 }
 obj.myfun()
-console.log(obj.yourfun(12,19));
+console.log(obj.add(12,19));

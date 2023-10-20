@@ -1,6 +1,6 @@
 /*
 Importent NOTEs :---
-    Agar humlog year ka -ve me likhenge to java script ise Before Christ(b.c) me show karega, aur agar humlog year ka +ve me likhenge to java script ise Anno Domini(a.d) me show karega.
+    Agar humlog year(saal) ko -ve me likhenge to java script ise "Before Christ(b.c)" me show karega, aur agar humlog year ka +ve me likhenge to java script ise "Anno Domini(a.d)" me show karega.
 */
 
 // Java script "Dates" :---
@@ -14,7 +14,7 @@ console.log(myDate.toLocaleTimeString());   //   4:14:45 am
 console.log(myDate.toLocaleDateString());   //   3/10/2023
 // console.log(typeof myDate); // object
 
-// let myCreatedDate = new Date(Year , month , date); // note javascript me mont ka indexing 0 to 11 tak hai matlab-ki ===> 0 => January , 11 => Febrary .
+// let myCreatedDate = new Date(Year , month , date); // note javascript me month ka indexing 0 to 11 tak hota hai matlab-ki ===> 0 => January , 11 => Febrary .
 let myCreatedDate = new Date(2025,0,3);   // Year , month , date
 console.log(myCreatedDate.toDateString());
 
@@ -24,7 +24,7 @@ console.log(my2ndDate.toLocaleString());
 
 let my3rdDate = new Date("2023-01-27"); //  year/month/date
 console.log(my3rdDate.toLocaleString());
-console.log(my3rdDate.getTime()); // Ye hame miliseconds me values dega , from 1st jan 1970 se abhitak ka.
+console.log(my3rdDate.getTime()); // Ye hame from 1st jan 1970 se 2023-01-27 tak ke time ka value miliseconds me dega .
 
 
 let myTimeStamp = Date.now() // Ye hame abhitak ke date ka value milisecound me dega from 1st jan 1970 se .

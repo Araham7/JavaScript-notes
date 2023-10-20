@@ -6,13 +6,13 @@ NOTE :
 ****** "Objects" are not ittaratable by using "for-of" loop .
 */
 
-// for of loop : Iska prayog "array ka elements ko ( object ke keys ya values ko )" nikalne(access) keliye kiya jata hai.
+// for of loop : Iska prayog "array ke elements ko ( object ke keys/values ko )" nikalne(access) keliye kiya jata hai.
 
 /* ***************************
 for (const iterator of objectName ) {
     console.log(iterator);
 }
-// iterator : Jis naam se array ke "elements" ko access kana hai .
+// iterator : Jis naam se array ke "elements" ko access karna hai .
 // objectName : Wo array ka naam , jiske elements ko hame access karna hai.
 *************************** */
 
@@ -104,3 +104,6 @@ India
 United States of America
 
 */
+
+
+

@@ -12,19 +12,19 @@ console.log(`Hello my name is ${name} and my repo count is ${repo} .`);   //This
 // Another method to make a string in JavaScript :---
 const gameName = new String('Araham-Abeddin.');
 console.log(gameName);
-console.log(gameName.length);   // Ye hame "gameName" naam e string ka length batlayega .
-console.log(gameName.toUpperCase());   // It will convert it into to "upper case" .
-console.log(gameName.toLowerCase());   // It will convert it into to "lower case" .
+console.log(gameName.length);   // Ye hame "gameName" naam ke string ka length batlayega .
+console.log(gameName.toUpperCase());   // It will convert it into "upper case" .
+console.log(gameName.toLowerCase());   // It will convert it into "lower case" .
 console.log(gameName.charAt(5));   // gameName.charAt(5) ===> ye hame 'gameName' ke 5th index ka value(charactor) batayega.
-console.log(gameName.indexOf('a'));   // gameName.indexOf('a') ===> ye hame 'gameName' ke kis index par charactor 'a'(pehla a) aaya hai use batata hai.aur yadi wo charactor diye gaye string(i.e , gameName ) me nahi hai to iska output "-1" dega.
-console.log(gameName.substring(0,4));// ye hamare string(gameName) ke 0th index se (4-1=3)rd index tak ke sare string to nikal karke dedega. [NOTE: substring ke argument me humlog negative value agar denge to bhi ye 0th index sehi start hoga.]
+console.log(gameName.indexOf('a'));   // gameName.indexOf('a') ===> ye hame 'gameName' ke kis index par charactor 'a'(first a) aaya hai use batata hai.aur yadi wo charactor diye gaye string(i.e , gameName ) me nahi hai to iska output "-1" dega.
+console.log(gameName.substring(0,4));// ye hamare string(gameName) ke 0th index se (4-1=3)rd index tak ke sare string to nikal karke dadega.[NOTE: substring ke argument me humlog negative value agar denge to bhi ye 0th index sehi start hoga.]
 console.log(gameName.slice(1,12));// ye bhi hamare string(gameName) ke 1st index se (12-1=11)th index tak ke sare string to nikal karke dedega.
 
 let newStr = "          dbhbvjcxbzjvxcb       "
 console.log(newStr);
-console.log(newStr.trim()); // newStr.trim() ===> Ye method "newStr" string ke aage aur piche wale spaces ko hata karke staring dega .
+console.log(newStr.trim()); // newStr.trim() ===> Ye method "newStr" string ke aage aur piche wale spaces ko hata karke string dega .
 console.log(newStr.trimStart());  // newStr.trimStart() ===> Ye method "newStr" string ke aage wale spaces ko hata karke staring dega .
-console.log(newStr.trimEnd());   // newStr.trimEnd() ===> Ye method "newStr" string ke end-wale(piche wale) sopaces ko hata karke staring dega .
+console.log(newStr.trimEnd());   // newStr.trimEnd() ===> Ye method "newStr" string ke "end-wale(piche wale) sopaces" ko hata karke staring dega .
 
 let url = "https://www.hostinger.in/?msclkid=c15c21d7468713a3448c44c8edd1787e&utm_source=bing&utm_medium=cpc&utm_campaign=Brand-Exact%7CNT%3ABing%7CLO%3AIN&utm_term=hostinger&utm_content=Hostinger"
 console.log(url.replace('%3' , '-')); // Ye "url" me preasent first '%3' ko '-' se replace kardega.

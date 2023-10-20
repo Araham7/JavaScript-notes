@@ -2,15 +2,16 @@
 
 const pinkuUser = {} /* 2nd way of declaring "Object" */
 
-//adding 'key' and 'value' in "tinderUser"===>Object.
+//adding 'key' and 'value' in "pinkurUser"===>Object.
 pinkuUser.id = "Pinku-Tinku"
 pinkuUser.name = "PINKU BABU"
 pinkuUser.isLoggedIn = false
 console.log(pinkuUser);   // OUTPUT : { id: '123abc', name: 'Sammy', isLoggedIn: false }
 
 
-/* IMPORTENT NOTE :---
-    Humlog ek "Object" ke andar me ek se jyada object ko key-value pair me karke store karsakten hai.
+/* 
+IMPORTENT NOTE :---
+*****Humlog ek "Object" ke andar me ek se jyada object ko key-value pair me store karsakten hai.
  */
 const regularUser = {
     email: "pinku@gmail.com",
@@ -97,7 +98,7 @@ console.log(Object.entries(pinkuUser));
   ]
 */
 
-/* ".hasOwnProperty('key that you like to check')" ===> Ye hame ye batlata hai ki koi "key" kisi given araa me exist karta hai ki nahi , yadi wo "key" yadi wo key us aray me exist karta hai to ye "true" print karega aur agar wo "key" us aray me exist nahi karta hoga to ye "alse" print karega. */
+/* ".hasOwnProperty('key that you like to check')" ===> Ye hame ye batlata hai ki koi "key" kisi given array me exist karta hai ki nahi , yadi wo "key" us aray me exist karta hai to ye "true" print karega aur yadi wo "key" us array me exist nahi karta hoga to ye "false" print karega. */
 console.log(pinkuUser.hasOwnProperty('isLoggedIn'));   // OUTPUT : true
 console.log(pinkuUser.hasOwnProperty("name"));   // OUTPUT : true
 
@@ -109,7 +110,20 @@ const course = {
 console.log(course.courseInstructor);   // OUTPUT : Araham
 
 
-// Destructure of object :---
+                                // **** Destructure of object ***** //
+/*
+    NOTE :---
+**** Destructure of an object:----
+// (1). first way of destructuring of an object :-
+const {object_ka_key} = Object_ka_naam
+console.log(object_ka_key);
+
+
+// (2). second way of destructuring of an object :-
+const {object_ka_key : Jis_naam_se_aap_Object_ke_key_ko_acces_karna_chahten_hai} = Object_ka_naam
+console.log(object_ka_key);
+
+*/
 
 // (1). first way of destructuring of an object .
 const {courseInstructor} = course
@@ -118,15 +132,3 @@ console.log(courseInstructor);   // OUTPUT : Araham
 // (2). second way of destructuring of an object .
 const {courseInstructor : instructure} = course
 console.log(instructure);   // OUTPUT : Araham
-
-// // {
-// //     "name": "hitesh",
-// //     "coursename": "js in hindi",
-// //     "price": "free"
-// // }
-
-// [
-//     {},
-//     {},
-//     {}
-// ]

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Events in Javascript </title>
+    <style>
+        body{
+            background-color: #212121;
+            color: burlywood;
+        }
+        a{
+            background-color: blue;
+            color: rgb(43, 75, 151);
+            padding: 5px ;
+            border: 2px solid black;
+            border-radius: 9%;
+        }
+    </style>
+</head>
+<body>
+    <H2>Amazing images</H2>
+    <ul id="images">
+        <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+        <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+        <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+        <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+        <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+        <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+    </ul>
+</body>
+<script>
+                                                    // Javascripts Events :---
+/*
+NOTE :---
+*****Bydefault hamare ".addEventlistioner" ka third-parameter "false"(Yaniki bubbled) rehta hai .
+*/
+
+
+// (1).
+    // document.getElementById('owl').onclick = function () {
+    //     alert("You clicked on owl");
+    // }  // Is method ka prayog humlog ab nahi karten hai .
+
+
+    /*
+    NOTE:---
+     *****This is the best way of applying event listioner(Using JavaScript) :---
+    document.getElementById('Id_Of_The_Element').addEventListener("Event_listoner_name" , call_backFunction , true/false)
+    */
+// (2).
+    // document.getElementById('owl').addEventListener("click",()=>{
+    //     alert("You clicked on owl");
+    // },false);   // Ye "bubble" ki tarhe "niche se upar" ki taraf jayega .
+
+// (3).
+    // document.getElementById('owl').addEventListener("click",()=>{
+    //     alert("You clicked on owl");
+    // },true);   // Ye "upar se niche" ki taraf jayega.
+
+// (4).
+    // document.querySelector('body').addEventListener('click',(e)=>{
+        // console.log(e);   // Ye("e") hame events ka property batlayega .
+        // console.log(e.timeStamp);   // Ye hame body par jis time(samay) par "click" huwa us samay(time) ko batlata hai .
+// console.log(`The x-value of courser is = ${e.movementX} and the y-value of courser is = ${e.movementY}`);
+    // })
+
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+
+
+// (5).
+    // document.getElementById('images').addEventListener('click',(e)=>{
+    //     console.log("Clicked inside the ul");
+    // },false);
+    // document.getElementById('owl').addEventListener('click',(e)=>{
+    //     console.log("Clicked inside the li");
+    // },false);   // "addEventListener('event_name',()=>{name of action},false)" ===> Ye hame "Bubble" type ka event listioner dega .
+
+// (6).
+// "addEventListener('event_name',()=>{name of action},true)" ===> Ye hame "capturing"(Ye upar se niche jayega) type ka event listioner dega .
+    // document.getElementById('images').addEventListener('click',(e)=>{
+    //     console.log("Clicked inside the ul");
+    // },true);
+    // document.getElementById('owl').addEventListener('click',(e)=>{
+    //     console.log("Clicked inside the li");
+    // },true);   
+
+// (7).
+    // document.getElementById('images').addEventListener('click',(e)=>{
+    //     console.log("Clicked inside the ul");
+    // },false);
+    // document.getElementById('owl').addEventListener('click',(e)=>{
+    //     console.log("Clicked inside the li");
+    //     e.stopPropagation()
+    // },false);
+    /*
+    "addEventListener('event_name',(e)=>{
+        logic
+        e.stopPropagation()  
+    })" ===> Ye hame "Bubble" aur "capturing" ko stop kardega matlab ki humlog jispar "click" karenge ye usipar kaam karega .
+    */
+
+
+/*
+   // (8).
+*****Small Project of removing of a selected element :---
+*/
+document.querySelector('#images').addEventListener('click',(e)=>{
+    // const removeElement = e.target.parentNode ;
+    // removeElement.remove()   //Ye hamare dwara selected element(image) ko remove kardega .
+    let selectedElement = e.target.tagName ;
+    console.log(selectedElement);
+    if (selectedElement == 'IMG') {
+        e.target.parentNode.remove()
+    }
+   },false)
+
+
+// (9).
+//    -------------------------------------------------------------------------------------
+//    document.querySelector('body').addEventListener('click',(e)=>{
+//     // console.log(e.target);   // ===> Ye hamare dwara selected image ka "taret(source=linc)" dega .
+//     // console.log(e.target.parentNode);   // Ye hamare dwara selected-image_ke_source_ka_parentNode(parent_element) dadega .
+//    },false)
+//    -----------------------------------------------------------------------------------
+
+
+// (10). Kisi link ko click karne par open na ho isliye humlog ".preventDeault()" method ka prayog karten hai.
+document.querySelector('#google').addEventListener('click',(e)=>{
+    e.preventDefault() ;   // Yadi humlog "google" link ko select karenge to "e.preventDefault()" method us linc ko lode nahi karega .
+})
+
+
+/*
+*****Some JavaScript "Event-listioner" methods :---
+(1). type , timestamp , defaultPrevented ,
+(2). target , toElement , srcElement , currentTarget ,
+(3). clientX , clientY , screenX , screenY ,
+(4). altkey , ctrlkey , shiftkey , keycode ,
+*/
+
+</script>
+</html>
+
+
+
+<!-- 
+********************** NOTES for Javascript Events Listioners *********************
+
+*****(0). onclick="alert(`I'm OWL`)" ===> Is "Event-listioner" ko humlog directly html ke kisi bhi tag ke opening tag me laga sakten hai.
+*****
+ -->

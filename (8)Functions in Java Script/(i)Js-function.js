@@ -5,7 +5,7 @@ let myFun1 = function () {
     console.log("Hey i'm a new function. ");
 }
 myFun1 // This is called "function ka reference" dena.
-myFun1()   // This is called "function call(function ko execute karwana)".
+myFun1();   // This is called "function call(function ko execute karwana)".
 
 // (2). Function that takes parameter :---
 let mul = function (num1 , num2) {
@@ -28,12 +28,15 @@ function sayMyName(){
 // sayMyName()   // Function call
 
 
-/* number1 and nuber2 are called "parameters" */
+/* 
+NOTE :---
+***** 'number1' and 'nuber2' are called "parameters" .
+ */
 // function addTwoNumbers(number1, number2){
 //     console.log(number1 + number2);
 // }
 // addTwoNumbers   // function ka "referance dena" .
-// addTwoNumbers()   // function ka "call karna" .
+// addTwoNumbers()   // function ko "call karna" .
 
 
 
@@ -95,8 +98,8 @@ console.log(returnSecondValue(myNewArray));
 // (8).
 /*
  NOTE :--- 
- ***** Jab bhi kahi function me ek se jyada bar return aaya hoto usme jo return sabse pehle aaya hai wahi wala return function return kaega . 
- ***** First return ke baad ke sare code ko function execute nahi karega.
+ ***** Jab bhi kabhi function me ek se jyada bar return aaya hoto usme jo return sabse pehle aaya hai wahi wala return function return karega . 
+ ***** First return ke baad ke code ko function execute nahi karega.
 */
 
 function fun1(num1 , num2) {
@@ -109,4 +112,3 @@ OUTPUT :---
 
 45
 */
-

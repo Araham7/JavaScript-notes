@@ -13,7 +13,7 @@ NOTE :
 
 
 
-// (2). if-elseif-else
+// (2). if - else if - else :---
 // if (condition1) {
     
 // }else if(condition2){

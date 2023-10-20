@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating and Removing element in Javascript</title>
+    <style>
+        body{
+            background-color: #792a2a;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+    <input type="text" id="input-text">
+    <!-- <button>
+        Submit button
+    </button> -->
+</body>
+<script>
+
+// *****First way of adding language(Function banakarke DOM me element ko add karna) :---
+/*
+NOTE :---
+*****Is tarikese kisi language ko "li" me add karnekeliye humlogon ko " DOM ke pure tree ko taverse karna parta hai " .
+*/
+    function addLanguage(langName) {
+        const addLi = document.createElement('li');
+        addLi.innerHTML = `${langName}` ;
+        document.querySelector('.language').appendChild(addLi);
+    }
+    addLanguage("Pythono") ;
+    addLanguage("TyprScript") ;
+    addLanguage("C++") ;
+    addLanguage("Mojo") ;
+
+
+//Second way of adding Lnguage :--- 
+    // Optimized way of adding "li"(Ye tarika mereme kaam nahi ka raha hai.s) :---
+    // function addOptyLan(langName) {
+    //     const li = document.createElement('li');
+    //     const text = document.createTextNode(langName) ;
+    //     // li.appendChild.text ;
+    //     li.append.text ;
+    //     document.querySelector('.language').appendChild(li);
+    // }
+    // addOptyLan("Mojo");
+
+
+
+
+
+    // -------------------------------------------
+                                    // Editing :---
+    let secondLang = document.querySelector("li:nth-child(2)") ;
+    // console.log(secondLang);
+    // secondLan.innerHTML = "C#" ;
+    const newli = document.createElement('li') ;
+    newli.textContent = "C#" ;
+    secondLang.replaceWith(newli);
+    // -------------------------------------------
+                                    // Editing :---
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML = '<li>Safari</li>'
+
+
+
+                        // Removing(Deleting) of an element using Javascript :---
+    const last_li = document.querySelector("li:last-child");
+    console.log(last_li);
+    last_li.remove()
+
+</script>
+</html>

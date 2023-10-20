@@ -5,10 +5,10 @@ NOTE :---
 
 /*
 [NOTE : Important notes hai iska use humlog react js me karenge ok.
-***** Arrow function me agar business logic ko { } curly bracket ke andar me likhenge to humlogon ko return keyword ka use karna parega aur agar () round bracket me likhenge to hame return keyword ka use nahi karna hoga]
+***** Arrow function me agar business logic ko { } curly bracket ke andar me likhenge to humlogon ko return keyword ka use karna parega aur agar () round bracket me likhenge to hame return keyword ka use nahi karna hoga ye automatically return kardega. ]
 
 Note :---
-***** Yadi humlogon ko Arrow function se *Object* return karwana hai to uske liye humlog rond-bracket ke andar object i.e, ({Object}) me likhenge ok
+***** Yadi humlogon ko Arrow function se *Object* return karwana hai to uske liye humlog rond-bracket ke andar me object [ i.e, ({Object}) ] likhenge ok
 [   ex: let x = ()=> ({"firstName" : "Araham" , "lastName" : "Abeddin"})   
 ] .
 */
@@ -17,13 +17,13 @@ Note :---
 
 /*
 //Making an "Arrow" function :---
-let functionName = (parameter1,parameter2,...)=>{
+let functionName = (parameter1,parameter2)=>{
     function_dafiniation;
 };
 
 // calling of arrow function :---
 
-functionName(parameter1,parameter2,...)
+functionName(parameter1,parameter2)
  */
 
 
@@ -40,7 +40,7 @@ amma();   // OUTPUT : Hello ! , How are you ?
 
 
 
-/* (2). Arrow function taking Parameter ( rturn type ) */
+/* (2). Arrow-function( return type ) taking Parameter */
 let mul = (num1 , num2)=>{
     let num3 = num1*num2 ;
     return num3 ;
@@ -53,7 +53,7 @@ console.log(result);
 /*
 Note:---
 (1). curly bracket lagane par humlog use *Explicit return* kahten hai kyuki humlogon ko return alag se likhna parta hai .
-(2). Round bracket lagane par (yaphir bina bracket lagane par) hame koi "return" nahi likhna par raha hai isiliye humlog ise *implicit return* krhenge.
+(2). Round bracket lagane par (ya phir bina bracket lagane par) hame koi "return" nahi likhna parta hai isiliye humlog ise *implicit return* kahten hai .
 */
 
 // (1). Implecit return :---
@@ -70,9 +70,9 @@ console.log(fun2(56,93));    // OUTPUT : 5208
 // (3). Explicit return :---
 /*
     NOTE : 
-        Jab kabhi bhi hamare arrow function ke definition me curly-brases(i.e {}  ) ka istamal kiya gaya ho tab humlog "return" ka prayog karten hai.
+    *****Jab kabhi bhi hamare arrow function ke definition me curly-brases(i.e {}  ) ka istamal kiya gaya ho tab humlog "return" ka prayog karten hai.
  */
-let fun3 = (m , n)=>{ return m / n }
+let fun3 = (m , n)=>{ return m/n }
 console.log(fun3(57,2));    // OUTPUT : 28.5
 
 
@@ -80,7 +80,7 @@ console.log(fun3(57,2));    // OUTPUT : 28.5
 // (4). Implicit return :---
 /* 
 NOTE :--- 
-*** Yadi hame arrow function se object return karwana hai to humlogon ko "()" ke andar me object ko likhna parega .
+*** Yadi hame arrow function se object return karwana hai to humlogon ko "()" ke andar me object ko likhna parega , jaysa ki humlog "round-bracket()" ke andar me likh rahen hai to hame return likhne ki jarurat nahi hai .
  */
 
 let fun4 = ()=> ({Name : "Araham" , Gender : "Male" , CollegeId : "21273030381"})

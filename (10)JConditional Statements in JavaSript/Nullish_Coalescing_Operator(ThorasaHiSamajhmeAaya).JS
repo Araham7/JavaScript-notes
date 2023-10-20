@@ -1,4 +1,4 @@
-// "Nullish Coalescing Operator(??)" ===> Is operator(??) ka prayog humlog data base se aaye huwe response ko show karne keliye karten hai. agar response null ya undefined rahta hai to ye ?? ke aaspas ke non-null / non-undefined value ko return kardeta hai.
+// "Nullish Coalescing Operator(??)" ===> Is operator(??) ka prayog humlog data base se aaye huwe response ko show karne keliye karten hai. agar response null ya undefined rahta hai to ye ?? ke aaspas ke "non-null / non-undefined" value ko return kardeta hai.
 
 let val1 ;
 
@@ -44,4 +44,6 @@ console.log(valB);   // OUTPUT :            ===> Ye kuch bhi nahi print karega j
 console.log(valC);   // OUTPUT : 42
 
 console.log(55??66);   // OUTPUT : 55
+
+
 

@@ -2,6 +2,7 @@
 // Object.create
 
 
+
 // object literals
 const mySym = Symbol("key1");   // Symbol "declaration" .
 
@@ -28,6 +29,9 @@ console.log(JsUser);
 
 /* *************** Freezing of object ***************** */
 Object.freeze(JsUser)   // Is tarhese "Object" ko 'freeze' kiya jata hai taki hamare Dwara banaye gaye obejct me koi bhi update ya changes na kiya ja sake .
+
+
+
 JsUser.email = "rukhsanayasmin786@gmail.com" // Ab email update nahi ho payega , kyunki hamara Object ("JsUser") ko freez kiya ja chuka hai .
 JsUser.age = 56 // ab age update nahi hopayega , kyunki hamara Object ("JsUser") ko freez kiya ja chuka hai .
 console.log(JsUser);
@@ -41,3 +45,9 @@ console.log(JsUser);
 
 // console.log(JsUser.greeting());
 // console.log(JsUser.greetingTwo());
+
+
+
+
+
+

@@ -33,8 +33,6 @@ second () me ham log function ko call karte hain isi ke andar chahe to function 
 
 
 
-
-
 /* ---- (3). Immediate invoce function expression(IIFE) taking taking integer parameter ---- */
 ((num1,num2)=>{
     let num3 = num1 + num2 ;

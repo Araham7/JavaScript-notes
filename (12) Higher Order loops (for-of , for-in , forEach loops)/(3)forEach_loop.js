@@ -1,6 +1,6 @@
 /*
 NOTE :---
-***** "forEach" koi bhi value return nahi karta hai , ye sirf valuse ko print karta hai.
+***** "forEach" koi bhi value "return" nahi karta hai , ye sirf valuse ko print karta hai.
 */
 // (0).
 const code = ["js", "ruby", "java", "python", "cpp"]
@@ -11,6 +11,8 @@ const values = code.forEach( (item) => {
 } )
 console.log(values);
 /*
+OUTPUT :---
+
 js
 ruby
 java
