@@ -19,7 +19,7 @@ const JsUser = {
 }
 
 console.log(JsUser.email) // 1st way of accessing Object element.
-console.log(JsUser["email"]) // 2nd way of acessing object element.
+console.log(JsUser["email"]) // 2nd way of accessing object element.
 console.log(JsUser["full name"]) // NoTE :- yadi kisi object ke "key" me 'space' hoto is tarhese object ke value ko access kiya jata hai.
 console.log(JsUser[mySym])   // Is tarhese Object mese 'Symbol' ka Value nikala jata hai.
 
