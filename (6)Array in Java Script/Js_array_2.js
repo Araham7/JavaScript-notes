@@ -20,7 +20,7 @@ console.log(allHerosAndMovies);   // OUTPUT : [ 'Sharuk Khan','Akshay Kumar','Kr
 
 
 
-/* --------------------------- (2). "Sprad(...)" operator ------------------------- */
+/* --------------------------- (2). "spread(...)" operator ------------------------- */
 /* --const all_new_heros = [...marvel_heros, ...dc_heros] Do ya do se jyada arrays ko marge karnekeliye humlog "Sprad(...)" operator ka prayog karten hai. --------*/
 
 const numbers = [  '56' , '36' , '45' , '96' , '108'] ;
