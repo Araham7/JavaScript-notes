@@ -86,7 +86,7 @@ handleObject(user) ;   //function call
 const myNewArray = [200, 400, 100, 600]
 
 function returnSecondValue(getArray){
-    return getArray[0]
+    return getArray[1]
 }
 console.log(returnSecondValue(myNewArray));
 // console.log(returnSecondValue([200, 400, 500, 1000]));
@@ -98,7 +98,7 @@ console.log(returnSecondValue(myNewArray));
 // (8).
 /*
  NOTE :--- 
- ***** Jab bhi kabhi function me ek se jyada bar return aaya hoto usme jo return sabse pehle aaya hai wahi wala return function return karega . 
+ ***** Jab bhi kabhi function me ek se jyada bar return aaya hoto usme jo return sabse pehle aaya hai wahi wala "return" ko function return karega . 
  ***** First return ke baad ke code ko function execute nahi karega.
 */
 
