@@ -1,5 +1,6 @@
 /*
 NOTE :---
+***** "forEach" loop callback function leta hai .
 ***** "forEach" koi bhi value "return" nahi karta hai , ye sirf valuse ko print karta hai.
 */
 // (0).
