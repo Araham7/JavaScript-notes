@@ -41,7 +41,7 @@ console.log(myArr);
 // (5) ".includes(9)"
 console.log(myArr.includes(9)); // This will check weather "myArr" , inludes '9' or not , if it includes '9' it will print 'true' if it does not include '9' it will print 'false' .
 
-// (6) ".includes(2)"
+// (6) ".indexOf(2)"
 console.log(myArr.indexOf(2)); // Ye '3' ka index batyega , aur agar ".indexOf()" ke andar likha gaya element 'myArr' me nahi hoga to ye "-1" print karega .
 
 // (7) ".join()"
