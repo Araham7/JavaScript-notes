@@ -45,7 +45,7 @@ console.log(myArr.includes(9)); // This will check weather "myArr" , inludes '9'
 console.log(myArr.indexOf(2)); // Ye '3' ka index batyega , aur agar ".indexOf()" ke andar likha gaya element 'myArr' me nahi hoga to ye "-1" print karega .
 
 // (7) ".join()"
-const newArr = myArr.join() // Ye "newArr" me "myArr" ke sare elements ko commasaparater laga karke string me convert kaardega . lekin origional array me koi bhi priwartan nahi aayega .
+const newArr = myArr.join() // Ye "newArr" me "myArr" ke sare elements ko comma saparater laga karke string me convert kaardega . lekin origional array me koi bhi priwartan nahi aayega .
 console.log( newArr);   // OUTPUT : 0,1,2,3,4,5,6,7,8,12,52
 console.log(typeof newArr);   // OUTPUT : string
 
