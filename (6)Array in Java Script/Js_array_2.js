@@ -10,7 +10,7 @@ console.log(marvel_heros[3][0]);   // OUTPUT : superman
 
 
 
-/* ------------- (1). ".concat()" se do array ko kisi tisre araay me merge karna ------------ */
+/* ------------- (1). ".concat()" method ka use humlog 2 array ko kisi tisre araay me merge karne keliye karten hai . ------------ */
 const desi_hero =[ "Sharuk Khan" , "Akshay Kumar" , "Krittik Roushan"]
 const holly_movie = ["harry_potter" , "Game_of_Throne"]
 const allHerosAndMovies = desi_hero.concat(holly_movie) // Ye  hamare "allHerosAndMovies" me 'desi_hero' aur 'holly_movie' ke sare array elements ko incert kardega.
