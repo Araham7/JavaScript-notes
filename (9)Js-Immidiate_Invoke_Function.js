@@ -29,7 +29,7 @@ second () me ham log function ko call karte hain isi ke andar chahe to function 
 /* --------- (2). Immediate invoce function expression(IIFE) taking string --------- */
 ( (name) => {
     console.log(`DB CONNECTED TWO ${name}`);
-} )('hitesh');
+} )('araham');
 
 
 
