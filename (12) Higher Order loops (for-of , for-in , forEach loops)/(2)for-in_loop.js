@@ -2,6 +2,7 @@
 
 /*
 NOTE : 
+*** for-in hamesha humlogon ko object_ka_keys aur array_ka_index deta hai .
 ***** "for-in" loop ka prayog humlog "Object" aur "Array" dono ke santh karsakten hai .
 ***** "for-in" loop hamesa key(object ka) / index(array ka) output me deta hai .
 ***** "Map()" ke santh "for-in" loop ka prayog nahi hota hai .
