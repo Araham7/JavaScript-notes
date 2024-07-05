@@ -60,7 +60,7 @@ console.log(real_another_array);   // OUTPUT : [1,2,3,4,5,6,6,7,4,5]
 /* ------------------- (4). " Array.isArray() " ------------------ */
 // Array.isArray() ==> Ye hame batlayega ki given(coming) data array hai ya nahi agar given data array hai to "true" print karega , aur agar given data array nahi hai to ye "false" print karega .
 //To check weather the coming(given) data is array or not ?
-const meraArray = [ "Araham" , "Abeddin" , "Tanisha" , "Aatefa" , "Arefa" , "Mummt" , "Papa" ] ;
+const meraArray = [ "Araham" , "Abeddin" , "Tanisha" , "Aatefa" , "Arefa" , "Mummy" , "Papa" ] ;
 console.log(Array.isArray( meraArray ));   // OUTPUT : Ye hame "true" dega kyunki "meraArray" ek array hai .
 
 
