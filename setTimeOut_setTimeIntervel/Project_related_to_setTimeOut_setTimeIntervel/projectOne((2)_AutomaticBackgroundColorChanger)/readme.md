@@ -1,3 +1,6 @@
+# Link to access live webPage : <a href="https://araham7.github.io/AutomaticBackgroundColorChanger/ " >Click me to live</a>
+
+
 # Background Color Changer
 
 This project is a simple JavaScript application that changes the background color of a webpage to a random color every 500 milliseconds when a button is clicked. It also includes a button to reset the background color to its original state.
