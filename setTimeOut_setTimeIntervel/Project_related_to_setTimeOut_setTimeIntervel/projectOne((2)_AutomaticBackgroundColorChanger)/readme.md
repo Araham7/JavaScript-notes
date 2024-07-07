@@ -1,4 +1,4 @@
-# Link to access live webPage : <a href="https://araham7.github.io/AutomaticBackgroundColorChanger/ " >Click me to live webPage</a>
+# Link to access live webPage : <a href="https://araham7.github.io/AutomaticBackgroundColorChanger/ " >Click me to explore live webPage</a>
 
 
 # Background Color Changer
