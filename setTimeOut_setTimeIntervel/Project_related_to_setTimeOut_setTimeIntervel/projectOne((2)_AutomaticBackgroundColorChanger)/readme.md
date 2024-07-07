@@ -7,12 +7,8 @@ This project is a simple JavaScript application that changes the background colo
 - **Change Background Color**: Starts changing the background color to a random color every 500 milliseconds.
 - **Reset Background Color**: Stops changing the background color and resets it to the original state.
 
-## Usage
 
-### HTML Structure
-
-Ensure your HTML file has the following structure:
-
+### HTML Code :---
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -44,6 +40,7 @@ Ensure your HTML file has the following structure:
 ```
 
 
+### CSS Code :---
 ```css
 *{
     margin: 0px;
@@ -110,7 +107,7 @@ button{
 ```
 
 
-
+### Javascript Code :---
 ```javascript
 let body = document.querySelector("body");
 let colorBtn = document.querySelector(".change_color") ; 
