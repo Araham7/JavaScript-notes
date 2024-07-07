@@ -69,7 +69,7 @@ console.log(Array.isArray( meraArray ));   // OUTPUT : Ye hame "true" dega kyunk
 
 /* ------------------- (5). " Array.from() " ===> Ye input me string leta hai aur output me array deta hai . ------------------ */
 console.log(Array.from("Araham"));   // OUTPUT : Ye string "Araham" ko array( [ 'A', 'r', 'a', 'h', 'a', 'm' ] ) me convert kardega .
-console.log(Array.from("5564651323164651"));
+console.log(Array.from("5564651323164651"));  // OUTPUT : [ '5', '5', '6', '4', '6', '5', '1', '3', '2', '3', '1', '6', '4', '6', '5', '1' ]
 
 
 
