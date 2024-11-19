@@ -1,4 +1,9 @@
 /* ***************************** "Map()" ******************************* */
+
+/* *********************************
+In JavaScript, the Map object is a collection of key-value pairs where both the keys and the values can be any data type, unlike regular objects where keys are typically strings or symbols. A Map maintains the insertion order of keys and is more efficient for frequent additions and deletions of key-value pairs compared to a regular object.
+*********************************** */
+
 // Map() : Ye 'Map()' , 'object[]' ke tarha hi "key-values pair" me data ko store karta hai , lekin object me repetation allowed hota hai magar "Map()" me koi bhi repetation allowed nahi hota hai .
 /*
  NOTE :---
