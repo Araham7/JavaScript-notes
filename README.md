@@ -49,3 +49,6 @@ You can run the JavaScript code in your browser's developer console, or in a Nod
 ## Contributing
 If you'd like to contribute to this repository, feel free to fork the repository and submit a pull request with your improvements or fixes. Please make sure to follow the contribution guidelines and respect the coding standards used in the repository.
 
+# License
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
